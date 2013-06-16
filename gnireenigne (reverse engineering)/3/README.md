@@ -91,3 +91,8 @@ Only know how to process 16-bit mono pcm sampled at 44100Hz
 String too large
 ;*2$"
 >z?t@nAhB
+
+
+##### made a 16-bit PCM wave and gave it as input, Needs key?
+###### root@kali:/home/musicman# ./musicman test.wav 
+###### Unable to open key file
