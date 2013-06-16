@@ -45,3 +45,40 @@ grandprix.shallweplayaga.me:2038
       |     |
       |  u  |
       |-----|
+      
+###### Solution plan
+      pseudo code
+            1. intake road map into python graph
+            2. load graph into pathing algo
+            3. determine and send next move (l,r,\n)
+            4. capture return data
+                  4a. data appears to be another road grid
+                        4a1. Yes - goto 1
+                        4a2. No dump data to screen.
+                        
+      basic algo found from pyhton docs:
+            graph =     {
+                        '00': ['01', '10'],
+                        '01': ['00', '02', '11'],
+                        '03': ['04', '13'],
+                        '04': ['03', '14'],
+                        '10': ['00', '20'],
+                        '12': ['13', '22']
+                        }
+            
+            def find_shortest_path(graph, start, end, path=[]):
+                  path = path + [start]
+                  if start == end:
+                  return path
+                  if not graph.has_key(start):
+                  return None
+                  shortest = None
+                  for node in graph[start]:
+                  if node not in path:
+                      newpath = find_shortest_path(graph, node, end, path)
+                      if newpath:
+                          if not shortest or len(newpath) < len(shortest):
+                              shortest = newpath
+                  return shortest
+            
+            print find_shortest_path(graph, 'A', 'D') 
