@@ -31,3 +31,6 @@ Using the UNION query the following users/passwords were pulled.
 	root/barking up the wrong tree  
 	user/password  
 
+## Notes from RD
+I attempted to learn some sqlmap, but I think the webserver isn't answering because it didn't get a useragent, or otherwise knows it's sqlmap.
+I did look at a raw tcpdump, and noticed "ec2-54-226-200-42.compute-1.amazonaws.com.http: Flags [S], cksum 0x0b4a (incorrect -> 0x4231)" Not sure if that invalid checksum is relevant or not.
