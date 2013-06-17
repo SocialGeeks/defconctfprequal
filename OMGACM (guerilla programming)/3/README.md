@@ -4,6 +4,9 @@ grandprix
 stay away from the zebras.  
 grandprix.shallweplayaga.me:2038  
 
+#### I was right on the money, just need to become a better python coder & CS major...
+      http://raz0r.name/other/defcon-ctf-2013-quals-grandprix-writeup/
+
 ##### likely need to use a https://en.wikipedia.org/wiki/A*_search_algorithm such as: http://stackoverflow.com/questions/4159331/python-speed-up-an-a-star-pathfinding-algorithm
 ###### Driving game (looks like fun!)
       nc grandprix.shallweplayaga.me 2038
