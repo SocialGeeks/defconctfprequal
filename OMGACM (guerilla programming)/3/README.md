@@ -58,7 +58,20 @@ grandprix.shallweplayaga.me:2038
                   4a. data appears to be another road grid
                         4a1. Yes - goto 1
                         4a2. No dump data to screen.
-                        
+      example grid:
+             0123456
+             |-----|
+            0|  r  |
+            1| c   |
+            2|     |
+            3|   ~ |
+            4| Z   |
+            5|  ~  |
+            6|     |
+            7|     |
+            8|Z u  |
+            9|-----|
+
       basic algo found from pyhton docs:
             graph =     {
                         '00': ['01', '10'],
